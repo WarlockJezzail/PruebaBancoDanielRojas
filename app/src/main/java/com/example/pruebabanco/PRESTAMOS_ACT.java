@@ -23,7 +23,7 @@ public class PRESTAMOS_ACT extends AppCompatActivity {
         spcredito=(Spinner)findViewById(R.id.sp2);
         textView=(TextView)findViewById(R.id.tv);
 
-        String[] listan = {"Selecciona un cliente...", "AXEL", "ROXANA",};
+        String[] listan = {"Selecciona un cliente...", "AXEL", "ROXANA","BETZABE","MATIAS"};
         String[] listap = {"Selecciona un credito...", "CREDITO HIPOTECARIO", "CREDITO AUTOMOTRIS",};
 
         ArrayAdapter<String> adapt = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listan);
@@ -38,22 +38,42 @@ public class PRESTAMOS_ACT extends AppCompatActivity {
 
         if(n.equals("AXEL")&&c.equals("CREDITO HIPOTECARIO")) {
 
-            int suma = 750000 + 1000000;
+            int suma = 450000 + 1000000;
             textView.setText("Su prestamo es de "+suma);
             }
         if(n.equals("ROXANA")&&c.equals("CREDITO HIPOTECARIO")) {
 
-            int suma = 900000 + 1000000;
+            int suma = 100000 + 1000000;
             textView.setText("Su prestamo es de "+suma);
             }
-            if(n.equals("AXEL")&&c.equals("CREDITO AUTOMOTRIS")) {
+        if(n.equals("BETZABE")&&c.equals("CREDITO HIPOTECARIO")) {
+
+                int suma = 500000 + 1000000;
+                textView.setText("Su prestamo es de "+suma);
+            }
+        if(n.equals("BETZABE")&&c.equals("CREDITO AUTOMOTRIS")) {
+
+                int suma = 500000 + 1000000;
+                textView.setText("Su prestamo es de "+suma);
+            }
+        if(n.equals("MATIAS")&&c.equals("CREDITO HIPOTECARIO")) {
+
+                int suma = 200000 + 1000000;
+                textView.setText("Su prestamo es de "+suma);
+            }
+        if(n.equals("MATIAS")&&c.equals("CREDITO AUTOMOTRIS")) {
+
+                int suma = 200000 + 1000000;
+                textView.setText("Su prestamo es de "+suma);
+            }
+        if(n.equals("AXEL")&&c.equals("CREDITO AUTOMOTRIS")) {
 
                 int suma = 750000 + 500000;
                 textView.setText("Su prestamo es de "+suma);
             }
-            if(n.equals("ROXANA")&&c.equals("CREDITO AUTOMOTRIS")) {
+        if(n.equals("ROXANA")&&c.equals("CREDITO AUTOMOTRIS")) {
 
-                int suma = 900000 + 500000;
+                int suma = 100000 + 500000;
                 textView.setText("Su prestamo es de "+suma);
             }
         }
@@ -68,7 +88,7 @@ public class PRESTAMOS_ACT extends AppCompatActivity {
         }
         if(n.equals("ROXANA")&&c.equals("CREDITO HIPOTECARIO")) {
 
-            int suma = (900000 + 1000000)/12;
+            int suma = (100000 + 1000000)/12;
             textView.setText("Su deuda es de "+suma);
         }
         if(n.equals("AXEL")&&c.equals("CREDITO AUTOMOTRIS")) {
@@ -78,7 +98,27 @@ public class PRESTAMOS_ACT extends AppCompatActivity {
         }
         if(n.equals("ROXANA")&&c.equals("CREDITO AUTOMOTRIS")) {
 
-            int suma = (900000 + 500000)/8;
+            int suma = (100000 + 500000)/8;
+            textView.setText("Su deuda es de "+suma);
+        }
+        if(n.equals("BETZABE")&&c.equals("CREDITO HIPOTECARIO")) {
+
+            int suma = (500000 + 1000000)/12;
+            textView.setText("Su deuda es de "+suma);
+        }
+        if(n.equals("MATIAS")&&c.equals("CREDITO HIPOTECARIO")) {
+
+            int suma = (200000 + 1000000)/12;
+            textView.setText("Su deuda es de "+suma);
+        }
+        if(n.equals("BETZABE")&&c.equals("CREDITO AUTOMOTRIS")) {
+
+            int suma = (500000 + 500000)/8;
+            textView.setText("Su deuda es de "+suma);
+        }
+        if(n.equals("MATIAS")&&c.equals("CREDITO AUTOMOTRIS")) {
+
+            int suma = (200000 + 500000)/8;
             textView.setText("Su deuda es de "+suma);
         }
     }
